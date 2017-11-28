@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ELVImagePicker
+
+  Created by LinElvin on 2017/11/28.
+  Copyright © 2017年 Elvin. All rights reserved.
+*/
+
+"Camera Roll" = "相機膠卷";
+"Favorites" = "喜好項目";
+"Screenshots" = "螢幕快照";
+"Selfies" = "自拍";

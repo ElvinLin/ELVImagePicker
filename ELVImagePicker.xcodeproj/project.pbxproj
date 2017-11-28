@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E59B32541FCDB7FD0020DE30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B32521FCDB7FD0020DE30 /* MainViewController.m */; };
+		E59B32551FCDB7FD0020DE30 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B32531FCDB7FD0020DE30 /* MainViewController.xib */; };
+		E59B32591FCDB83C0020DE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59B32571FCDB83C0020DE30 /* Assets.xcassets */; };
+		E59B325A1FCDB83C0020DE30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59B32581FCDB83C0020DE30 /* Info.plist */; };
+		E59B325F1FCDB8780020DE30 /* ELVImagerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */; };
+		E59B32601FCDB8780020DE30 /* ELVImagerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */; };
+		E59B32621FCDB8D20020DE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59B32611FCDB8D20020DE30 /* LaunchScreen.storyboard */; };
+		E59B32651FCDBB230020DE30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59B32671FCDBB230020DE30 /* Localizable.strings */; };
 		E5CEFF3E1FCD699500ACD235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF3D1FCD699500ACD235 /* AppDelegate.m */; };
-		E5CEFF411FCD699500ACD235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF401FCD699500ACD235 /* ViewController.m */; };
-		E5CEFF441FCD699500ACD235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CEFF421FCD699500ACD235 /* Main.storyboard */; };
-		E5CEFF461FCD699500ACD235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CEFF451FCD699500ACD235 /* Assets.xcassets */; };
-		E5CEFF491FCD699500ACD235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CEFF471FCD699500ACD235 /* LaunchScreen.storyboard */; };
 		E5CEFF4C1FCD699500ACD235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF4B1FCD699500ACD235 /* main.m */; };
 		E5CEFF561FCD699500ACD235 /* ELVImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF551FCD699500ACD235 /* ELVImagePickerTests.m */; };
 		E5CEFF611FCD699500ACD235 /* ELVImagePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF601FCD699500ACD235 /* ELVImagePickerUITests.m */; };
@@ -35,15 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E59B32511FCDB7FD0020DE30 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E59B32521FCDB7FD0020DE30 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E59B32531FCDB7FD0020DE30 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E59B32571FCDB83C0020DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E59B32581FCDB83C0020DE30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59B325C1FCDB8780020DE30 /* ELVImagerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVImagerPickerViewController.h; sourceTree = "<group>"; };
+		E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVImagerPickerViewController.m; sourceTree = "<group>"; };
+		E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELVImagerPickerViewController.xib; sourceTree = "<group>"; };
+		E59B32611FCDB8D20020DE30 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E59B32661FCDBB230020DE30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E59B32681FCDBB330020DE30 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E5CEFF391FCD699500ACD235 /* ELVImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CEFF3C1FCD699500ACD235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5CEFF3D1FCD699500ACD235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5CEFF3F1FCD699500ACD235 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5CEFF401FCD699500ACD235 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E5CEFF431FCD699500ACD235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5CEFF451FCD699500ACD235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5CEFF481FCD699500ACD235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E5CEFF4A1FCD699500ACD235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5CEFF4B1FCD699500ACD235 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5CEFF511FCD699500ACD235 /* ELVImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELVImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CEFF551FCD699500ACD235 /* ELVImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVImagePickerTests.m; sourceTree = "<group>"; };
@@ -78,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E59B32501FCDB7FD0020DE30 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59B32511FCDB7FD0020DE30 /* MainViewController.h */,
+				E59B32521FCDB7FD0020DE30 /* MainViewController.m */,
+				E59B32531FCDB7FD0020DE30 /* MainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E59B32561FCDB83C0020DE30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E59B32571FCDB83C0020DE30 /* Assets.xcassets */,
+				E59B32581FCDB83C0020DE30 /* Info.plist */,
+				E59B32671FCDBB230020DE30 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E59B325B1FCDB8780020DE30 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E59B325C1FCDB8780020DE30 /* ELVImagerPickerViewController.h */,
+				E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */,
+				E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		E5CEFF301FCD699500ACD235 = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +142,11 @@
 			children = (
 				E5CEFF3C1FCD699500ACD235 /* AppDelegate.h */,
 				E5CEFF3D1FCD699500ACD235 /* AppDelegate.m */,
-				E5CEFF3F1FCD699500ACD235 /* ViewController.h */,
-				E5CEFF401FCD699500ACD235 /* ViewController.m */,
-				E5CEFF421FCD699500ACD235 /* Main.storyboard */,
-				E5CEFF451FCD699500ACD235 /* Assets.xcassets */,
-				E5CEFF471FCD699500ACD235 /* LaunchScreen.storyboard */,
-				E5CEFF4A1FCD699500ACD235 /* Info.plist */,
 				E5CEFF4B1FCD699500ACD235 /* main.m */,
+				E59B32611FCDB8D20020DE30 /* LaunchScreen.storyboard */,
+				E59B325B1FCDB8780020DE30 /* Library */,
+				E59B32561FCDB83C0020DE30 /* Resources */,
+				E59B32501FCDB7FD0020DE30 /* ViewController */,
 			);
 			path = ELVImagePicker;
 			sourceTree = "<group>";
@@ -220,6 +257,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = E5CEFF301FCD699500ACD235;
 			productRefGroup = E5CEFF3A1FCD699500ACD235 /* Products */;
@@ -238,9 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CEFF491FCD699500ACD235 /* LaunchScreen.storyboard in Resources */,
-				E5CEFF461FCD699500ACD235 /* Assets.xcassets in Resources */,
-				E5CEFF441FCD699500ACD235 /* Main.storyboard in Resources */,
+				E59B32601FCDB8780020DE30 /* ELVImagerPickerViewController.xib in Resources */,
+				E59B32651FCDBB230020DE30 /* Localizable.strings in Resources */,
+				E59B325A1FCDB83C0020DE30 /* Info.plist in Resources */,
+				E59B32551FCDB7FD0020DE30 /* MainViewController.xib in Resources */,
+				E59B32621FCDB8D20020DE30 /* LaunchScreen.storyboard in Resources */,
+				E59B32591FCDB83C0020DE30 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CEFF411FCD699500ACD235 /* ViewController.m in Sources */,
+				E59B325F1FCDB8780020DE30 /* ELVImagerPickerViewController.m in Sources */,
 				E5CEFF4C1FCD699500ACD235 /* main.m in Sources */,
 				E5CEFF3E1FCD699500ACD235 /* AppDelegate.m in Sources */,
+				E59B32541FCDB7FD0020DE30 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,20 +345,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E5CEFF421FCD699500ACD235 /* Main.storyboard */ = {
+		E59B32671FCDBB230020DE30 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E5CEFF431FCD699500ACD235 /* Base */,
+				E59B32661FCDBB230020DE30 /* en */,
+				E59B32681FCDBB330020DE30 /* zh-Hant */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E5CEFF471FCD699500ACD235 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5CEFF481FCD699500ACD235 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -431,7 +468,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ELVImagePicker/Info.plist;
+				DEVELOPMENT_TEAM = SK43NC5A98;
+				INFOPLIST_FILE = "$(SRCROOT)/ELVImagePicker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elvin.ELVImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +482,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ELVImagePicker/Info.plist;
+				DEVELOPMENT_TEAM = SK43NC5A98;
+				INFOPLIST_FILE = "$(SRCROOT)/ELVImagePicker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elvin.ELVImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
