@@ -6,12 +6,12 @@
 //  Copyright © 2017年 Elvin. All rights reserved.
 //
 
-#import "ELVImagerPickerViewController.h"
+#import "ELVAlbumPickerViewController.h"
+#import "ELVImagePickerViewController.h"
+#import "ELVTableViewCell.h"
 #import <Photos/Photos.h>
 
-static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
-
-@interface ELVImagerPickerViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ELVAlbumPickerViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray *smartAlbumArray;
@@ -24,7 +24,7 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
 
 @end
 
-@implementation ELVImagerPickerViewController
+@implementation ELVAlbumPickerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,9 +39,7 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
     
     self.smartAlbumCount = 0;
     self.userAlbumCount = 0;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
+    
     PHAuthorizationStatus photoAuthorStatus = [PHPhotoLibrary authorizationStatus];
     if (photoAuthorStatus == PHAuthorizationStatusAuthorized) {
         [self loadData];
@@ -58,13 +56,14 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)close {
-    
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
@@ -103,10 +102,15 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
             PHAsset *asset = [assetsFetchResult lastObject];
             CGSize size = CGSizeMake(100, 100);
             [manager requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                [self.smartAlbumImageArray addObject:result];
+                if (result == nil) {
+                    [self.smartAlbumImageArray addObject:[[UIImage alloc] init]];
+                } else {
+                    [self.smartAlbumImageArray addObject:result];
+                }
                 self.smartAlbumCount--;
                 if (self.smartAlbumCount == 0) {
                     [self.tableView reloadData];
+                    self.tableView.hidden = NO;
                 }
             }];
         }
@@ -124,10 +128,15 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
         PHAsset *asset = [assetsFetchResult firstObject];
         CGSize size = CGSizeMake(100, 100);
         [manager requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            [self.userAlbumImageArray addObject:result];
+            if (result == nil) {
+                [self.userAlbumImageArray addObject:[[UIImage alloc] init]];
+            } else {
+                [self.userAlbumImageArray addObject:result];
+            }
             self.userAlbumCount--;
             if (self.userAlbumCount == 0) {
                 [self.tableView reloadData];
+                self.tableView.hidden = NO;
             }
         }];
         //NSLog(@"Album = %@", collection.localizedTitle);
@@ -135,6 +144,10 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
 }
 
 #pragma mark - tableView
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0f;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
 }
@@ -150,10 +163,18 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
     return count;
 }
 
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 1) {
+        return NSLocalizedString(@"myalbum", @"");
+    }
+    
+    return nil;
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PHAssetCollection *collection;
-    UIImageView *imageView = nil;
+    UIImage *imageView = nil;
     NSString *title = @"";
     if (indexPath.section == 0) {
         collection = self.smartAlbumArray[indexPath.row];
@@ -167,16 +188,35 @@ static NSString *CELLID = @"ELVImagerPickerViewControllerCellID";
     //NSLog(@"Album:%@ count:%lu", collection.localizedTitle, count);
     title = [NSString stringWithFormat:@"%@(%lu)", collection.localizedTitle, count];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELLID];
+    ELVTableViewCell * cell = (ELVTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    if (!cell)
+    {
+        [tableView registerNib:[UINib nibWithNibName:@"ELVTableViewCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
     }
-    [cell.textLabel setText:title];
-    if (imageView != nil) {
-        [cell.imageView setImage:imageView];
-    }
+    [cell.albumName setText:title];
+    [cell.albumCover setImage:imageView];
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    PHAssetCollection *collection;
+    if (indexPath.section == 0) {
+        collection = self.smartAlbumArray[indexPath.row];
+    } else if (indexPath.section == 1) {
+        collection = self.userAlbumArray[indexPath.row];
+    }
+    PHFetchResult *assetsFetchResult = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
+    NSInteger count = assetsFetchResult.count;
+    if (count > 0) {
+        ELVImagePickerViewController *imagePickerVC = [[ELVImagePickerViewController alloc] initWithNibName:@"ELVImagePickerViewController" bundle:nil];
+        imagePickerVC.collection = collection;
+        [self.navigationController pushViewController:imagePickerVC animated:YES];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+    
 
 @end

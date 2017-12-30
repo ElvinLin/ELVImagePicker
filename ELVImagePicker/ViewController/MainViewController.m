@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "ELVImagerPickerViewController.h"
+#import "ELVAlbumPickerViewController.h"
 
 @interface MainViewController ()
 
@@ -26,21 +26,11 @@
 }
 
 - (IBAction)imagerPicker:(id)sender {
-    ELVImagerPickerViewController *imagePickerVC = [[ELVImagerPickerViewController alloc] init];
+    ELVAlbumPickerViewController *imagePickerVC = [[ELVAlbumPickerViewController alloc] init];
     UINavigationController *imagePickerNC = [[UINavigationController alloc] initWithRootViewController:imagePickerVC];
     [self presentViewController:imagePickerNC animated:YES completion:^{
         
     }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

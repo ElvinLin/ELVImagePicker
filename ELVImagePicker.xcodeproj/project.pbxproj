@@ -11,10 +11,15 @@
 		E59B32551FCDB7FD0020DE30 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B32531FCDB7FD0020DE30 /* MainViewController.xib */; };
 		E59B32591FCDB83C0020DE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59B32571FCDB83C0020DE30 /* Assets.xcassets */; };
 		E59B325A1FCDB83C0020DE30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59B32581FCDB83C0020DE30 /* Info.plist */; };
-		E59B325F1FCDB8780020DE30 /* ELVImagerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */; };
-		E59B32601FCDB8780020DE30 /* ELVImagerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */; };
+		E59B325F1FCDB8780020DE30 /* ELVAlbumPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B325D1FCDB8780020DE30 /* ELVAlbumPickerViewController.m */; };
 		E59B32621FCDB8D20020DE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59B32611FCDB8D20020DE30 /* LaunchScreen.storyboard */; };
 		E59B32651FCDBB230020DE30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59B32671FCDBB230020DE30 /* Localizable.strings */; };
+		E59B32711FD06C000020DE30 /* ELVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B326F1FD06C000020DE30 /* ELVTableViewCell.m */; };
+		E59B32721FD06C000020DE30 /* ELVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B32701FD06C000020DE30 /* ELVTableViewCell.xib */; };
+		E59B32741FD06F1F0020DE30 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59B32731FD06F1F0020DE30 /* Icon-60@3x.png */; };
+		E59B32801FD074CA0020DE30 /* ELVAlbumPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B327F1FD074CA0020DE30 /* ELVAlbumPickerViewController.xib */; };
+		E59B32851FD075380020DE30 /* ELVImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B32831FD075380020DE30 /* ELVImagePickerViewController.m */; };
+		E59B32861FD075380020DE30 /* ELVImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59B32841FD075380020DE30 /* ELVImagePickerViewController.xib */; };
 		E5CEFF3E1FCD699500ACD235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF3D1FCD699500ACD235 /* AppDelegate.m */; };
 		E5CEFF4C1FCD699500ACD235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF4B1FCD699500ACD235 /* main.m */; };
 		E5CEFF561FCD699500ACD235 /* ELVImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CEFF551FCD699500ACD235 /* ELVImagePickerTests.m */; };
@@ -44,12 +49,19 @@
 		E59B32531FCDB7FD0020DE30 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		E59B32571FCDB83C0020DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59B32581FCDB83C0020DE30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E59B325C1FCDB8780020DE30 /* ELVImagerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVImagerPickerViewController.h; sourceTree = "<group>"; };
-		E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVImagerPickerViewController.m; sourceTree = "<group>"; };
-		E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELVImagerPickerViewController.xib; sourceTree = "<group>"; };
+		E59B325D1FCDB8780020DE30 /* ELVAlbumPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVAlbumPickerViewController.m; sourceTree = "<group>"; };
 		E59B32611FCDB8D20020DE30 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E59B32661FCDBB230020DE30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E59B32681FCDBB330020DE30 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E59B326E1FD06C000020DE30 /* ELVTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVTableViewCell.h; sourceTree = "<group>"; };
+		E59B326F1FD06C000020DE30 /* ELVTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVTableViewCell.m; sourceTree = "<group>"; };
+		E59B32701FD06C000020DE30 /* ELVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ELVTableViewCell.xib; sourceTree = "<group>"; };
+		E59B32731FD06F1F0020DE30 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		E59B327F1FD074CA0020DE30 /* ELVAlbumPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELVAlbumPickerViewController.xib; sourceTree = "<group>"; };
+		E59B32811FD074E40020DE30 /* ELVAlbumPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVAlbumPickerViewController.h; sourceTree = "<group>"; };
+		E59B32821FD075380020DE30 /* ELVImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVImagePickerViewController.h; sourceTree = "<group>"; };
+		E59B32831FD075380020DE30 /* ELVImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVImagePickerViewController.m; sourceTree = "<group>"; };
+		E59B32841FD075380020DE30 /* ELVImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ELVImagePickerViewController.xib; sourceTree = "<group>"; };
 		E5CEFF391FCD699500ACD235 /* ELVImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CEFF3C1FCD699500ACD235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5CEFF3D1FCD699500ACD235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +112,7 @@
 		E59B32561FCDB83C0020DE30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E59B32731FD06F1F0020DE30 /* Icon-60@3x.png */,
 				E59B32571FCDB83C0020DE30 /* Assets.xcassets */,
 				E59B32581FCDB83C0020DE30 /* Info.plist */,
 				E59B32671FCDBB230020DE30 /* Localizable.strings */,
@@ -110,9 +123,15 @@
 		E59B325B1FCDB8780020DE30 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				E59B325C1FCDB8780020DE30 /* ELVImagerPickerViewController.h */,
-				E59B325D1FCDB8780020DE30 /* ELVImagerPickerViewController.m */,
-				E59B325E1FCDB8780020DE30 /* ELVImagerPickerViewController.xib */,
+				E59B32811FD074E40020DE30 /* ELVAlbumPickerViewController.h */,
+				E59B325D1FCDB8780020DE30 /* ELVAlbumPickerViewController.m */,
+				E59B327F1FD074CA0020DE30 /* ELVAlbumPickerViewController.xib */,
+				E59B326E1FD06C000020DE30 /* ELVTableViewCell.h */,
+				E59B326F1FD06C000020DE30 /* ELVTableViewCell.m */,
+				E59B32701FD06C000020DE30 /* ELVTableViewCell.xib */,
+				E59B32821FD075380020DE30 /* ELVImagePickerViewController.h */,
+				E59B32831FD075380020DE30 /* ELVImagePickerViewController.m */,
+				E59B32841FD075380020DE30 /* ELVImagePickerViewController.xib */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -276,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59B32601FCDB8780020DE30 /* ELVImagerPickerViewController.xib in Resources */,
+				E59B32741FD06F1F0020DE30 /* Icon-60@3x.png in Resources */,
 				E59B32651FCDBB230020DE30 /* Localizable.strings in Resources */,
+				E59B32801FD074CA0020DE30 /* ELVAlbumPickerViewController.xib in Resources */,
 				E59B325A1FCDB83C0020DE30 /* Info.plist in Resources */,
+				E59B32861FD075380020DE30 /* ELVImagePickerViewController.xib in Resources */,
+				E59B32721FD06C000020DE30 /* ELVTableViewCell.xib in Resources */,
 				E59B32551FCDB7FD0020DE30 /* MainViewController.xib in Resources */,
 				E59B32621FCDB8D20020DE30 /* LaunchScreen.storyboard in Resources */,
 				E59B32591FCDB83C0020DE30 /* Assets.xcassets in Resources */,
@@ -306,8 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59B325F1FCDB8780020DE30 /* ELVImagerPickerViewController.m in Sources */,
+				E59B325F1FCDB8780020DE30 /* ELVAlbumPickerViewController.m in Sources */,
 				E5CEFF4C1FCD699500ACD235 /* main.m in Sources */,
+				E59B32851FD075380020DE30 /* ELVImagePickerViewController.m in Sources */,
+				E59B32711FD06C000020DE30 /* ELVTableViewCell.m in Sources */,
 				E5CEFF3E1FCD699500ACD235 /* AppDelegate.m in Sources */,
 				E59B32541FCDB7FD0020DE30 /* MainViewController.m in Sources */,
 			);

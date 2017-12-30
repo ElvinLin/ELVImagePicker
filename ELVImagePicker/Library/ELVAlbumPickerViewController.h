@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ELVImagerPickerViewController : UIViewController
+@interface ELVAlbumPickerViewController : UIViewController
 
 @end
